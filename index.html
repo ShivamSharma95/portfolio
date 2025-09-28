@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shivam Portfolio</title>
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
   <!-- NAVBAR -->
   <nav>
-    <div class="logo">Shivam</div>
+    <a class="logo-btn">Shivam Sharma</a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -21,24 +23,29 @@
 
   <!-- HERO SECTION -->
   <section id="hero">
+    <div class="hero-image">
+      <img src="./src/images/avatar.png" alt="Avatar">
+    </div>
+    <div class="hero-message">
+      <span class="red-text hey-text">Hey!!</span> <span class ="grey-text">I'm </span><span class="black-text"> Shivam Sharma</span> 
+    </div>
     <div class="hero-text">
       <h1>I Build Full-Stack Stuff That Actually Works!</h1>
       <p>Code, bugs, and late-night coffee keep it all running.</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-    <div class="hero-image">
-      <img src="images/avatar.png" alt="Avatar">
+      <a href="#contact" class="resume-btn">Contact Me > </a>
     </div>
   </section>
 
   <!-- ABOUT SECTION -->
-  <section id="about">
+  <section id="about" class = "white-flex">
     <div class="about-container">
-      <img src="images/coding.png" alt="Coding illustration">
+      <img src="./src/images/coding.png" alt="Coding illustration">
       <div>
         <h2>A Bit About Me</h2>
-        <p>I'm a full-stack developer who writes clean, efficient code across the stack. I enjoy turning complex problems into working solutions.</p>
-        <a href="#contact" class="btn">Contact Me</a>
+        <h3>(& My Code)</h3>
+        <p>I'm a full-stack developer who writes clean, efficient code across the stack. I enjoy turning complex
+          problems into working solutions.</p>
+        <a href="#contact" class="resume-btn">Contact Me > </a>
       </div>
     </div>
   </section>
@@ -67,7 +74,7 @@
   </section>
 
   <!-- PROJECTS SECTION -->
-  <section id="portfolio">
+  <section id="portfolio" class="white-flex">
     <h2>My Personal Playground</h2>
     <div class="projects">
       <div class="project-card">
@@ -97,7 +104,7 @@
   </section>
 
   <!-- WORK EXPERIENCE SECTION -->
-  <section id="work">
+  <section id="work" class="white-flex">
     <h2>Where I've Worked</h2>
     <div class="work-cards">
       <div class="work-card">
@@ -113,4 +120,5 @@
 
   <script src="./src/js/script.js"></script>
 </body>
+
 </html>
