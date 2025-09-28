@@ -1,46 +1,47 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
+/* RESET & BASE */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f9f7f6; color: #333; }
+a { text-decoration: none; color: inherit; }
 
-header {
-  background: #333;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+/* NAVBAR */
+nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 50px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+nav ul { display: flex; gap: 20px; list-style: none; }
+.resume-btn { padding: 8px 16px; background: #ff4c60; color: #fff; border-radius: 5px; }
 
-header nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-}
+/* HERO */
+#hero { display: flex; justify-content: space-around; align-items: center; padding: 100px 50px; }
+.hero-text h1 { font-size: 2.5rem; margin-bottom: 20px; }
+.hero-text p { font-size: 1.2rem; margin-bottom: 20px; }
+.btn { padding: 10px 20px; background: #ff4c60; color: #fff; border-radius: 5px; }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-}
+/* ABOUT */
+#about .about-container { display: flex; gap: 50px; align-items: center; justify-content: center; padding: 80px 50px; }
+#about img { width: 300px; border-radius: 10px; }
 
-form input, form textarea, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
+/* SKILLS */
+#skills { padding: 80px 50px; text-align: center; }
+.skills-table { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
+.skill-category { background: #fff; padding: 20px; border-radius: 10px; width: 200px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
 
-form button {
-  background: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+/* PROJECTS */
+#portfolio { padding: 80px 50px; text-align: center; }
+.projects { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.project-card { background: #fff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #f4f4f4;
-  margin-top: 2rem;
+/* TESTIMONIALS */
+#testimonials { padding: 80px 50px; text-align: center; }
+.testimonial-cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.testimonial { background: #fff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+
+/* WORK */
+#work { padding: 80px 50px; text-align: center; }
+.work-cards { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.work-card { background: #fff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+  #hero, #about .about-container { flex-direction: column; }
 }
